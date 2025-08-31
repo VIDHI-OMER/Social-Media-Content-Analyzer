@@ -27,6 +27,16 @@ A web application that analyzes social media posts from uploaded **PDFs or Image
 
 ---
 
+---
+
+## 📝 Approach
+
+The Social Media Content Analyzer application is designed to extract and analyze text from PDF and image documents to provide insights for improving engagement. The application supports drag-and-drop and file picker interfaces for easy document upload, ensuring a user-friendly experience. For PDFs, text extraction is performed using pdfplumber to preserve formatting. For image-based documents, OCR technology (pytesseract) is employed to accurately extract textual content.
+
+The backend is implemented using FastAPI, which handles file uploads, text extraction, and serves results efficiently. The frontend is built with Streamlit for rapid development and interactive visualization of extracted content. Loading states and basic error handling are incorporated to enhance user experience and ensure robustness.
+
+
+
 ## ⚙️ Setup Instructions
 
 ### 1. Clone the repository
@@ -36,13 +46,6 @@ cd social-media-content-analyzer
 
 
 
----
-
-## 📝 Approach
-
-The Social Media Content Analyzer application is designed to extract and analyze text from PDF and image documents to provide insights for improving engagement. The application supports drag-and-drop and file picker interfaces for easy document upload, ensuring a user-friendly experience. For PDFs, text extraction is performed using pdfplumber to preserve formatting. For image-based documents, OCR technology (pytesseract) is employed to accurately extract textual content.
-
-The backend is implemented using FastAPI, which handles file uploads, text extraction, and serves results efficiently. The frontend is built with Streamlit for rapid development and interactive visualization of extracted content. Loading states and basic error handling are incorporated to enhance user experience and ensure robustness.
 
 The project leverages open-source tools and libraries, avoiding paid services while maintaining production-quality standards. Test data was sourced from publicly available social media posts and documents to validate functionality.
 
